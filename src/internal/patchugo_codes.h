@@ -22,10 +22,18 @@ namespace PatchugoCodes {
     */
     enum class PatchugoStatusCode {
         OK = 105,
+        ERROR_ANALOG_WRITE_CONF_REG,
+        ERROR_ANALOG_READ_CONF_REG,
+        ERROR_ANALOG_WRONG_CONF,
+        ERROR_ANALOG_READ_CONV,
     };
 
     //Utility constant expressions to ease use of enum class of PatchugoStatusCode
     static constexpr PatchugoStatusCode OK = PatchugoCodes::PatchugoStatusCode::OK;
+    static constexpr PatchugoStatusCode ERROR_ANALOG_WRITE_CONF_REG = PatchugoCodes::PatchugoStatusCode::ERROR_ANALOG_WRITE_CONF_REG;
+    static constexpr PatchugoStatusCode ERROR_ANALOG_READ_CONF_REG = PatchugoCodes::PatchugoStatusCode::ERROR_ANALOG_READ_CONF_REG;
+    static constexpr PatchugoStatusCode ERROR_ANALOG_WRONG_CONF = PatchugoCodes::PatchugoStatusCode::ERROR_ANALOG_WRONG_CONF;
+    static constexpr PatchugoStatusCode ERROR_ANALOG_READ_CONV = PatchugoCodes::PatchugoStatusCode::ERROR_ANALOG_READ_CONV;
 
     /**
     * @brief Returns the integer representation of the given status code
