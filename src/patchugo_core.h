@@ -9,5 +9,7 @@
 #pragma once
 
 #include "internal/patchugo_codes.h"
+#include "internal/logger/patchugo_logger.h"
 
 using namespace PatchugoCodes;
+using namespace PatchugoLogger;
