@@ -26,6 +26,9 @@ namespace PatchugoCodes {
         ERROR_ANALOG_READ_CONF_REG,
         ERROR_ANALOG_WRONG_CONF,
         ERROR_ANALOG_READ_CONV,
+        ERROR_RELAY_READ_STATE,
+        ERROR_RELAY_WRITE,
+        ERROR_RELAY_CLEAR,
     };
 
     //Utility constant expressions to ease use of enum class of PatchugoStatusCode
@@ -34,6 +37,9 @@ namespace PatchugoCodes {
     static constexpr PatchugoStatusCode ERROR_ANALOG_READ_CONF_REG = PatchugoCodes::PatchugoStatusCode::ERROR_ANALOG_READ_CONF_REG;
     static constexpr PatchugoStatusCode ERROR_ANALOG_WRONG_CONF = PatchugoCodes::PatchugoStatusCode::ERROR_ANALOG_WRONG_CONF;
     static constexpr PatchugoStatusCode ERROR_ANALOG_READ_CONV = PatchugoCodes::PatchugoStatusCode::ERROR_ANALOG_READ_CONV;
+    static constexpr PatchugoStatusCode ERROR_RELAY_READ_STATE = PatchugoCodes::PatchugoStatusCode::ERROR_RELAY_READ_STATE;
+    static constexpr PatchugoStatusCode ERROR_RELAY_WRITE = PatchugoCodes::PatchugoStatusCode::ERROR_RELAY_WRITE;
+    static constexpr PatchugoStatusCode ERROR_RELAY_CLEAR = PatchugoCodes::PatchugoStatusCode::ERROR_RELAY_CLEAR;
 
     /**
     * @brief Returns the integer representation of the given status code
