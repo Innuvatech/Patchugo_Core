@@ -62,6 +62,7 @@ namespace PatchugoCodes {
         ERROR_FLASH_SECTOR_ERASE,
         ERROR_FLASH_READ_DATA,
         ERROR_FLASH_WRITE_DATA,
+        ERROR_FLASH_OVERFLOW,
     };
 
     //Utility constant expressions to ease use of enum class of PatchugoStatusCode
@@ -106,6 +107,7 @@ namespace PatchugoCodes {
     static constexpr PatchugoStatusCode ERROR_FLASH_SECTOR_ERASE = PatchugoCodes::PatchugoStatusCode::ERROR_FLASH_SECTOR_ERASE;
     static constexpr PatchugoStatusCode ERROR_FLASH_READ_DATA = PatchugoCodes::PatchugoStatusCode::ERROR_FLASH_READ_DATA;
     static constexpr PatchugoStatusCode ERROR_FLASH_WRITE_DATA = PatchugoCodes::PatchugoStatusCode::ERROR_FLASH_WRITE_DATA;
+    static constexpr PatchugoStatusCode ERROR_FLASH_OVERFLOW = PatchugoCodes::PatchugoStatusCode::ERROR_FLASH_OVERFLOW;
 
 
     /**
